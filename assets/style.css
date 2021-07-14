@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body{
+	font-family:'Work Sans', sans-serif;
+	background-color: #F9F6F7;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background-color: #FF971D;
+}
+
+header > h1{
+	font-size: 42px;
+	padding: 20px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: white;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	height: 540px;
+}
+
+aside{
+	overflow-y: auto;
+}
+
+.input_section,
+.search_buku,
+.buku_saya{
+	flex: 1;
+	margin: 30px 70px;
+	padding: 30px 20px;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+}
+
+.input_section > h2{
+	text-align: center;
+	font-size: 24px;
+	color: #FF971D;
+}
+
+.input_section > form > .input,
+.input_inline, button{
+	color: #FF971D;
+	font-weight: 500;
+	display: block;
+	padding: 10px 0px;
+}
+
+.input_section > form > .input,
+.input_inline > label{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.input_section > form > .input > input,button{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	font-size: 19px;
+	border-color: rgba(0, 0, 0, .2);
+	color: rgba(0, 0, 0, .5);
+}
+
+.input_section > form > .input > input:focus{
+	outline: none;
+}
+
+.input_section > form > .input_inline > #input_selesai_dibaca{
+	cursor: pointer;
+}
+
+button{
+	font-size: 14px;
+	color: white;
+	background-color: #FF971D;
+	border-style: none;
+	font-weight: 600;
+	cursor: pointer;
+	font-weight: 200;
+}
+
+button > span{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.search_buku{
+	padding: 30px 50px;
+	flex: 2;
+	box-sizing: border-box;
+}
+
+.search_buku > h2{
+	text-align: center;
+	color: #FF971D;
+	font-size: 24px;
+	height: auto;
+}
+
+.search_buku > form {
+	padding: 10px 0px;
+}
+
+.search_buku > form > .input{
+	display: flex;
+}
+
+.search_buku > form > .input > input{
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 20px;
+	border-color: rgba(0, 0, 0, .2);
+	color: rgba(0, 0, 0, .5);
+}
+.search_buku > form > .input > button{
+	width: 25%;
+	font-size: 12px;
+	font-weight: bold;
+	height: auto;
+	padding: 2px 30px;
+	margin-left: 5px ;
+}
+
+.search_buku > form > .input > input:focus{
+	outline: none;
+}
+.search_buku > form > .input > input::placeholder{
+	color: rgba(0, 0, 0, .2);
+}
+
+
+.buku_saya > h2{
+	font-size: 24;
+	color: #FF971D;
+}
+
+.buku_saya > .list_buku{
+	padding: 20px 40px;
+	line-height: 25px;
+}
+
+.buku_saya > .list_buku > .item_buku{
+	margin-top: 20px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	box-shadow:0px 0px 10px .5px rgba(0, 0, 0, 0.25);
+}
+
+.buku_saya > .list_buku > .item_buku > h2{
+	color: #555555;
+	font-size: 20px;
+}
+
+.buku_saya > .list_buku > .item_buku > p{
+	color: #555555;
+}
+
+.buku_saya > .list_buku > .item_buku > .action{
+	padding-top: 10px;
+	display: flex;
+}
+
+.buku_saya > .list_buku > .item_buku > .action > button{
+	width: auto;
+	height: auto;
+	padding: 9px;
+}
+
+.buku_saya > .list_buku > .item_buku > .action > .green{
+	background-color: green;
+}
+.buku_saya > .list_buku > .item_buku > .action > .red{
+	background-color: red;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px){
+	main{
+		flex-direction: column;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	.input_section{
+		margin-top: 40px;
+	}
+
+}
+
+
+
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

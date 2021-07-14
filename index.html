@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BookSelf</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+<header>
+	<h1>BookSelf Apps</h1>
+</header>
+<main>
+	<section class="input_section">
+		<h2>Masukkan Buku Baru</h2>
+		<form id="input_buku">
+			<div class="input">
+				<label for="input_judul">Judul</label>
+				<input type="text" id="input_judul" required>
+			</div>
+			<div class="input">
+				<label for="input_Penulis">Penulis</label>
+				<input type="text" id="input_penulis" required>
+			</div>
+			<div class="input">
+				<label for="input_tahun">Tahun</label>
+				<input type="number" id="input_tahun" required>
+			</div>
+			<div class="input_inline">
+				<label for="input_selesai_dibaca">Selesai Dibaca</label>
+				<input type="checkbox" id="input_selesai_dibaca">
+			</div>
+			<button id="submit_buku" type="submit"> Masukkan Buku Ke Rak <span>Belum Selesai Dibaca</span></button>
+		</form>
+	</section>
+
+	<aside>
+		<section class="search_buku">
+			<h2>Cari Buku (Opsional)</h2>
+			<form id="cari_buku">
+				<div class="input">
+					<input type="text" id="cari_judul_buku" placeholder="Judul">
+					<button id="submit_search" type="submit">Cari Buku</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="buku_saya">
+			<h2>Belum Selesai Dibaca</h2>
+			<div id="belum_selesai_dibaca" class="list_buku">
+			</div>
+		</section>
+
+		<section class="buku_saya">
+			<h2>Selesai Dibaca</h2>
+			<div id="selesai_dibaca" class="list_buku">
+			</div>
+		</section>
+	</aside>
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/dom.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
